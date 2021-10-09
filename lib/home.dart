@@ -1,3 +1,4 @@
+import 'package:atoms_coin/slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
@@ -142,6 +143,13 @@ class _HomeState extends State<Home> {
               ),
             ),
           ],
+        ),
+      ),
+      Padding(
+        padding: const EdgeInsets.only(top: 400, left: 60),
+        child: SliderWidget(
+          min: 0,
+          max: 100,
         ),
       )
     ]));
